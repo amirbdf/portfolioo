@@ -9,7 +9,7 @@ const ContactPage = () => {
   });
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
-  const [error, setError] = useState("");
+  const [error, setError] = useState<string>(""); // Define error state
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -21,7 +21,7 @@ const ContactPage = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    setError("");
+    setError(""); // Reset error state on submit
 
     try {
       const response = await fetch("YOUR_API_ENDPOINT", {
@@ -38,7 +38,8 @@ const ContactPage = () => {
 
       setSuccess(true);
       setFormData({ name: "", email: "", message: "" }); // Reset form
-    } catch (error) {
+    } catch (err) {
+        console.log(err);
       setError("There was an error sending your message. Please try again.");
     } finally {
       setLoading(false);
@@ -102,7 +103,7 @@ const ContactPage = () => {
         </button>
       </form>
       {success && <p className="mt-4 text-green-600">Message sent successfully!</p>}
-      {error && <p className="mt-4 text-red-600">{error}</p>}
+      {error && <p className="mt-4 text-red-600">{error}</p>} {/* Ensure this is recognized */}
     </div>
   );
 };

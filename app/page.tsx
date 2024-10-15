@@ -1,4 +1,3 @@
-import Image from "next/image";
 import * as Typewriter from "react-effect-typewriter";
 import Link from "next/link"; // Import Link from Next.js
 

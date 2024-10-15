@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import { StaticImageData } from "next/image"; // Import StaticImageData
 
 // Import images
 import htmlIcon from '../html.png';
@@ -9,7 +10,14 @@ import reactIcon from '../react.png';
 import nextjsIcon from '../nextjs.svg';
 import svelteIcon from '../svelte.png';
 
-const skillsData = [
+// Define a type for the skills data
+type Skill = {
+  name: string;
+  icon: StaticImageData; // Change to StaticImageData
+  percentage: number;
+};
+
+const skillsData: Skill[] = [
   { name: "HTML", icon: htmlIcon, percentage: 90 },
   { name: "CSS", icon: cssIcon, percentage: 85 },
   { name: "JavaScript", icon: jsIcon, percentage: 80 },
@@ -28,7 +36,12 @@ export default function Skills() {
   );
 }
 
-function SkillCard({ skill }) {
+// Define props type for SkillCard
+interface SkillCardProps {
+  skill: Skill;
+}
+
+function SkillCard({ skill }: SkillCardProps) {
   const [percent, setPercent] = useState(0);
 
   useEffect(() => {
