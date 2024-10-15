@@ -39,6 +39,7 @@ const ContactPage = () => {
       setSuccess(true);
       setFormData({ name: "", email: "", message: "" }); // Reset form
     } catch (error) {
+      console.log(error)
       setError("There was an error sending your message. Please try again.");
     } finally {
       setLoading(false);
