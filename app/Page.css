@@ -1,0 +1,74 @@
+/* Reset body margins and set height to 100% */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure body takes full height */
+}
+
+/* Container takes full height and width */
+.container {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    margin-right: 0;
+    margin-left: 7%;
+    background-color: #f5f5f5; /* Background color */
+}
+
+/* Content area for image and text */
+.content {
+    display: flex;
+    align-items: center; /* Center items vertically within the content */
+    justify-content: center; /* Center content horizontally */
+    border: 2px solid #2275C4;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease;
+    width: 90%; /* Adjust width as necessary */
+    max-width: 1200px; /* Optional max-width */
+}
+
+/* Image styles */
+.image-container img {
+    max-width: 150px; /* Limit image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular image */
+    margin-right: 20px; /* Space between image and text */
+    animation: slideIn 1.5s ease;
+}
+
+/* Text container styles */
+.text-container {
+    max-width: 600px; /* Limit text width */
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Animation for the whole section */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Slide-in animation for the image */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
