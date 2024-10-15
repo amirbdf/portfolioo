@@ -38,8 +38,13 @@ const ContactPage = () => {
 
       setSuccess(true);
       setFormData({ name: "", email: "", message: "" }); // Reset form
+<<<<<<< HEAD
     } catch (err) {
         console.log(err);
+=======
+    } catch (error) {
+      console.log(error)
+>>>>>>> 2c22bd8a011f5a4ffbea6c8a5f8ce40eee1e0d8d
       setError("There was an error sending your message. Please try again.");
     } finally {
       setLoading(false);
