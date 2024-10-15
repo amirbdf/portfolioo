@@ -41,11 +41,7 @@ interface SkillCardProps {
   skill: Skill;
 }
 
-<<<<<<< HEAD
 function SkillCard({ skill }: SkillCardProps) {
-=======
-function SkillCard({ skill }: SkillCardProps) { // Specify the type here
->>>>>>> 2c22bd8a011f5a4ffbea6c8a5f8ce40eee1e0d8d
   const [percent, setPercent] = useState(0);
 
   useEffect(() => {
