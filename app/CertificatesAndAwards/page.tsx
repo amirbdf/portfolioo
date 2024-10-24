@@ -17,7 +17,7 @@ const certificatesAndAwards = [
             </>
         ),
         image: certImage1, // First certificate image
-        date: "[01/05/2023]", // Add a date field here
+       
     },
     {
         id: 2,
@@ -28,18 +28,18 @@ const certificatesAndAwards = [
             </>
         ),
         image: certImage2, // Second certificate image
-        date: "[15/09/2023]", // Add a date field here
+        
     },
     {
         id: 3,
         title: "Bachelor Scholarship (Stipendium Hungaricum)",
         description: (
             <>
-                Awarded the prestigious Stipendium Hungaricum Scholarship for academic excellence and outstanding contributions during undergraduate studies.
+                Awarded the prestigious Stipendium Hungaricum Scholarship for academic excellence and outstanding contributions during high school studies.
             </>
         ),
         images: [awardImage1, awardImage2], // Array of award images
-        date: "[10/06/2024]", // Add a date field here
+        
     },
 ];
 
