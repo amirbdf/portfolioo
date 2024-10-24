@@ -51,11 +51,20 @@ const CertificatesAndAwards = () => {
                             {/* If multiple images (for award), map over them */}
                             {Array.isArray(item.images) ? (
                                 item.images.map((img, idx) => (
-                                    <Image key={idx} src={img} alt={`${item.title} Image ${idx + 1}`} />
+                                    <Image 
+                                        key={idx} 
+                                        src={img} 
+                                        alt={`${item.title} Image ${idx + 1}`} 
+                                    />
                                 ))
                             ) : (
-                                // If single image, render normally
-                                <Image src={item.image} alt={item.title} />
+                                // Check if the image is defined before rendering
+                                item.image ? (
+                                    <Image 
+                                        src={item.image} 
+                                        alt={item.title} 
+                                    />
+                                ) : null // Render nothing if image is undefined
                             )}
                             <h3>{item.title}</h3>
                             <p>{item.date}</p>
