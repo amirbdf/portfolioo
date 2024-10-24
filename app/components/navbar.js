@@ -27,6 +27,11 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
+          <Link href="CertificatesAndAwards">
+            Certificates And Awards
+          </Link>
+        </li>
+        <li>
           <Link href="contact">
             Contact
           </Link>

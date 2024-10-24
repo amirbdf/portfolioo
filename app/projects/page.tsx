@@ -54,7 +54,7 @@ const projects = [
 const Projects = () => {
     return (
         <div>
-            <h2 className='title'>My Projects</h2>
+            
             <div className="projects-container">
                 <div className="projects-grid">
                     {projects.map(project => (
