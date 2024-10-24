@@ -13,22 +13,20 @@ const certificatesAndAwards = [
         title: "Technical Support Fundamentals (Google)",
         description: (
             <>
-                Completed the "Technical Support Fundamentals" course from Google, covering core concepts in IT support, networking, and troubleshooting.
+                Completed the &quot;Technical Support Fundamentals&quot; course from Google, covering core concepts in IT support, networking, and troubleshooting.
             </>
         ),
         image: certImage1, // First certificate image
-        
     },
     {
         id: 2,
         title: "Design Thinking for Beginners",
         description: (
             <>
-                Completed the "Design Thinking for Beginners" course, gaining foundational knowledge in innovative problem-solving and design thinking principles.
+                Completed the &quot;Design Thinking for Beginners&quot; course, gaining foundational knowledge in innovative problem-solving and design thinking principles.
             </>
         ),
         image: certImage2, // Second certificate image
-       
     },
     {
         id: 3,
@@ -39,7 +37,6 @@ const certificatesAndAwards = [
             </>
         ),
         images: [awardImage1, awardImage2], // Array of award images
-        
     },
 ];
 
