@@ -70,7 +70,6 @@ const CertificatesAndAwards = () => {
                                 ) : null // Render nothing if image is undefined
                             )}
                             <h3>{item.title}</h3>
-                            <p>{item.date}</p> {/* Use the date property */}
                             <p>{item.description}</p>
                         </div>
                     ))}
