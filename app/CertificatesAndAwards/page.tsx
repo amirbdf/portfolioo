@@ -17,6 +17,7 @@ const certificatesAndAwards = [
             </>
         ),
         image: certImage1, // First certificate image
+        date: "[01/05/2023]", // Add a date field here
     },
     {
         id: 2,
@@ -27,6 +28,7 @@ const certificatesAndAwards = [
             </>
         ),
         image: certImage2, // Second certificate image
+        date: "[15/09/2023]", // Add a date field here
     },
     {
         id: 3,
@@ -37,6 +39,7 @@ const certificatesAndAwards = [
             </>
         ),
         images: [awardImage1, awardImage2], // Array of award images
+        date: "[10/06/2024]", // Add a date field here
     },
 ];
 
@@ -67,7 +70,7 @@ const CertificatesAndAwards = () => {
                                 ) : null // Render nothing if image is undefined
                             )}
                             <h3>{item.title}</h3>
-                            <p>{item.date}</p>
+                            <p>{item.date}</p> {/* Use the date property */}
                             <p>{item.description}</p>
                         </div>
                     ))}
