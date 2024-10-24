@@ -2,3 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.linkedin-link {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    color: #0e76a8; /* LinkedIn blue color */
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.linkedin-link:hover {
+    color: #084c7b; /* Darker shade on hover */
+}
